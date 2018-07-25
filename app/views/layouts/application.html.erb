@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= content_for?(:title) ? yield(:title) : "Paradise Diner" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Paradise is located at Front & Girard and we also deliver!!" %>">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Gallery", root_path %></li>
+
+      </ul>
+
+
+    <%= yield %>
+  </body>
+</html>

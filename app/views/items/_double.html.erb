@@ -1,0 +1,23 @@
+<div class="food-menu">
+
+  <table>
+      <thead>
+          <th>Name</th>
+          <!-- <th class="description">Description</th> -->
+          <th>Price</th>
+          <th>Deluxe</th>
+      </thead>
+
+      <tbody>
+        <% @items.each do |i| %>
+          <tr>
+              <td><%= link_to i.name, category_item_path(i.category_id,i.id) %></td>
+              <!-- <td class="description"><%= i.description %></td> -->
+              <td><%= number_to_currency(i.price) %></td>
+              <td><%= number_to_currency(i.price2) %></td>
+          </tr>
+
+        <% end %>
+      </tbody>
+  </table>
+</div>

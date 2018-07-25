@@ -1,0 +1,76 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.left-border{
+  background: image-url("river-sand.jpg");
+  height: 200%;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  float: left;
+}
+
+.background{
+  background: image-url("Tropical.jpg");
+  height: 40%;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+
+.name{
+    font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
+    color: #000;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
+    float: left;
+    width: 80%;
+    text-align: center;
+    height: 30%;
+}
+.name p{
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.right-border{
+  background: image-url("sand-stone.jpg");
+  height: 200%;
+  width: 10%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+.category-background{
+  background: image-url("blue-ocean-water.jpg");
+  height: 1000px;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // display: inline-block;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: DodgerBlue;
+}
+
+.category-container{
+  height: 70px;
+  width: 350px;
+  background-color: white;
+  opacity: .7;
+  margin: 20px;
+}
+.category-container p{
+  text-align: center;
+}
+.category-container p a{
+  color: red;
+  font-size: 25px;
+
+}

@@ -1,0 +1,10 @@
+<!-- <h1>Items#show</h1>
+<p>Find me in app/views/items/show.html.erb</p> -->
+
+<div class="show-item">
+  <p>Item Name: <%= @item.name %></p>
+  <p>Item Description: <%= @item.description %></p>
+  <!-- <p><%= @item.id %></p>
+  <p><%= @item.category_id %></p> -->
+  <%= (link_to 'BACK', category_items_path(@item.category_id)) %>
+</div>
