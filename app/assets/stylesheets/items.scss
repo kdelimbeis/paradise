@@ -1,3 +1,38 @@
 // Place all the styles related to the Items controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.menu{
+  display: flex;
+}
+.items-border{
+    width: 15%;
+    height: 400px;
+    display: inline-block;
+}
+
+.stones{
+  background: image-url("Beach-Stones.jpg");
+  height: 50%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+}
+
+.sunset{
+  background: image-url("sunset.jpg");
+  height: 50%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.items-background{
+  background: image-url("beach-background.jpg");
+  height: 40%;
+  width: 80%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}

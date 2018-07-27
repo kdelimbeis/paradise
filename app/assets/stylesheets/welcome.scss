@@ -2,75 +2,158 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.left-border{
-  background: image-url("river-sand.jpg");
-  height: 200%;
-  width: 10%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: inline-block;
-  float: left;
-}
+@media all and (min-width: 320px){
+  .welcome-container{
+    height: 2000px;
+    width: fit-content;
+  }
 
-.background{
-  background: image-url("Tropical.jpg");
-  height: 40%;
-  width: 80%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  float: left;
-}
-
-.name{
-    font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
-    color: #000;
-    text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
+  .left-border{
+    background: image-url("river-sand.jpg");
+    height: 100%;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
     float: left;
-    width: 80%;
-    text-align: center;
-    height: 30%;
-}
-.name p{
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-}
+  }
 
-.right-border{
-  background: image-url("sand-stone.jpg");
-  height: 200%;
-  width: 10%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  display: inline-block;
-}
+  .background{
+    background: image-url("Tropical.jpg");
+    height: 15%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+  }
+  .name-container{
+    float: left;
+    width: 100%;
+    // height: 6%;
+  }
+  .name, .address{
+      font: 400 40px/1.2 'Leckerli One', Helvetica, sans-serif;
+      color: maroon;
+      text-shadow: 2px 2px 0px rgba(0,0,0,0.2), 4px 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+  }
+  .name p{
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+  }
 
-.category-background{
-  background: image-url("blue-ocean-water.jpg");
-  height: 1000px;
-  width: 80%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  // display: inline-block;
+  .right-border{
+    background: image-url("sand-stone.jpg");
+    height: 100%;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: none;
+  }
+
+  .category-background{
+    background: image-url("blue-ocean-water.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     float: left;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: DodgerBlue;
+  }
+
+  .category-container{
+    height: 70px;
+    width: 350px;
+    background-color: white;
+    opacity: .7;
+    margin: 20px;
+  }
+  .category-container p{
+    text-align: center;
+  }
+  .category-container p a{
+    color: red;
+    font-size: 25px;
+  }
+  .address-container{
+    float: left;
+    width: 100%;
+    // height: 12%;
+  }
+  .phone-container{
+    float: left;
+    background-color: lightyellow;
+    width: 100%;
+    // height: 7%;
+  }
+  .phone{
+    font-family: Gill Sans Extrabold, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 3%;
+    font-weight: bold;
+  }
 }
 
-.category-container{
-  height: 70px;
-  width: 350px;
-  background-color: white;
-  opacity: .7;
-  margin: 20px;
-}
-.category-container p{
-  text-align: center;
-}
-.category-container p a{
-  color: red;
-  font-size: 25px;
 
+@media all and (min-width: 768px){
+
+  .category-container{
+    height: 60px;
+    width: 250px;
+  }
+  .name-container{
+    height: 6%;
+  }
+  .name, .address{
+      font: 400 80px/1.2 'Leckerli One', Helvetica, sans-serif;
+  }
+  .address-container{
+    height: 12%;
+  }
+  .phone-container{
+    width: 100%;
+    height: 7%;
+  }
+  .phone{
+    font-size: 40px;
+  }
+  .category-background{
+    height: 60%;
+  }
+  .category-container p a{
+    font-size: 20px;
+  }
+}
+
+
+@media all and (min-width: 1024px){
+
+  .left-border, .right-border{
+    display: inline-block;
+  }
+  .background{
+    width: 80%;
+  }
+  .name-container, .address-container, .category-background{
+    width: 80%;
+  }
+  .category-container{
+    height: 70px;
+    width: 350px;
+  }
+  .name, .address{
+      font: 400 100px/1.2 'Leckerli One', Helvetica, sans-serif;
+  }
+  .phone-container{
+    width: 80%;
+  }
+  .phone{
+    font-size: 50px;
+  }
+  .category-container p a{
+    font-size: 25px;
+  }
 }

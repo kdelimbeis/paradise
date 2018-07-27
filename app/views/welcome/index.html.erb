@@ -1,28 +1,35 @@
 <!-- <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p> -->
 
+<div class="welcome-container">
 
-<div class="left-border">
+  <div class="left-border"></div>
 
-</div>
+  <div class="background"></div>
 
-<div class="background">
+  <div class="name-container">
+    <div class="name">
+      Paradise Diner
+    </div>
+  </div>
 
-</div>
+  <div class="category-background">
+    <% @categories.each do |c| %>
+        <div class="category-container">
+          <p><%= link_to c.name, category_items_path(c.id)  %></p>
+        </div>
+    <% end %>
+  </div>
 
-<div class="name">
-  <p>Paradise Diner</p>
-</div>
+  <div class="address-container">
+    <div class="address">Front & Girard</div>
+    <div class="address">Philadelphia</div>
+  </div>
 
-<div class="category-background">
-  <% @categories.each do |c| %>
-      <div class="category-container">
-        <p><%= link_to c.name, category_items_path(c.id)  %></p>
-      </div>
-  <% end %>
-</div>
+  <div class="phone-container">
+    <div class="phone">(215) 922-4390 or (215) 925-0240</div>
+  </div>
 
-
-<div class="right-border">
+  <div class="right-border"></div>
 
 </div>
