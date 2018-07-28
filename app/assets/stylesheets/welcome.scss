@@ -53,7 +53,7 @@
 
   .category-background{
     background: image-url("blue-ocean-water.jpg");
-    width: 100%;
+    width: fit-content;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     float: left;
@@ -122,6 +122,7 @@
   }
   .category-background{
     height: 60%;
+    width: 100%;
   }
   .category-container p a{
     font-size: 20px;
