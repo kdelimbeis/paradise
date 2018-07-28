@@ -3,36 +3,70 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .menu{
-  display: flex;
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+}
+.menu-items{
+  height: 50%;
 }
 .items-border{
-    width: 15%;
-    height: 400px;
-    display: inline-block;
+  width: 15%;
+  height: 100%;
+  float: left;
 }
-
-.stones{
-  background: image-url("Beach-Stones.jpg");
-  height: 50%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
-}
-
-.sunset{
-  background: image-url("sunset.jpg");
-  height: 50%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
 .items-background{
   background: image-url("beach-background.jpg");
-  height: 40%;
-  width: 80%;
+  height: 50%;
+  width: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  float: left;
+}
+.stones{
+  background: image-url("Beach-Stones.jpg");
+  height: 25%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.sunset{
+  background: image-url("sunset.jpg");
+  height: 25%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.hammock{
+  background: image-url("hammock.jpg");
+  height: 25%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.fiordland{
+  background: image-url("fiordland.jpg");
+  height: 25%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media all and (min-width: 320px){
+  .items-border{
+   display: none;
+ }
+}
+
+@media all and (min-width: 768px){
+
+}
+
+@media all and (min-width: 1024px){
+  .items-border{
+    display: inline-block;
+ }
+ .menu{
+   width: 85%;
+ }
 }

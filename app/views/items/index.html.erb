@@ -1,19 +1,22 @@
 <!-- <h1>Items#index</h1>
 <p>Find me in app/views/items/index.html.erb</p> -->
 
-<div class="menu">
-  <div class="items-border">
-    <div class="sunset"></div>
-    <div class="stones"></div>
+<div class="items-border">
+  <div class="sunset"></div>
+  <div class="hammock"></div>
+  <div class="stones"></div>
+  <div class="fiordland"></div>
 
-  </div>
-
-
-  <% if @category.id == 9 || @category.id ==13 %>
-    <%= render 'double' %>
-      <% else %>
-    <%= render 'single' %>
-  <% end %>
 </div>
 
-<div class="items-background"></div>
+
+<div class="menu">
+  <div class="menu-items">
+    <% if @category.id == 9 || @category.id ==13 %>
+      <%= render 'double' %>
+        <% else %>
+      <%= render 'single' %>
+    <% end %>
+  </div>
+  <div class="items-background"></div>
+</div>
