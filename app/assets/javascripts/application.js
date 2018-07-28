@@ -10,6 +10,15 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
+//= require jquery3
+//= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require jquery.slick
+//= require jquery.sliders
+
+$(document).ready(function () {
+  $("#slideshow").sliders({
+      interval: 2000
+    });
+});

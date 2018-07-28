@@ -5,6 +5,9 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'jquery-rails'
+gem "jquery-slick-rails"
+gem 'jquery-sliders-rails'
 
 group :development do
   gem 'sqlite3'

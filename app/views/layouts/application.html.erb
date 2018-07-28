@@ -7,7 +7,6 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
   </head>
 
@@ -15,11 +14,13 @@
 
       <ul>
         <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Gallery", root_path %></li>
+        <li><%= link_to "Gallery", gallery_index_url %></li>
 
       </ul>
 
 
     <%= yield %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </body>
 </html>
