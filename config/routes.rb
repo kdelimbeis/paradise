@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'breakfast/index'
+
   resources :categories do
     resources :items
   end

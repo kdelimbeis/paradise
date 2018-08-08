@@ -1,0 +1,116 @@
+// Place all the styles related to the breakfast controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+@media all and (min-width: 320px){
+  .breakfast {
+  font-family: Helvetica, Arial, sans-serif;
+  height: 1200px;
+  width: 100%;
+  }
+  .breakfast-container{
+    height: 100%;
+    width: 100%;
+    float: left;
+  }
+  .breakfast-background{
+    background: image-url("beach-background.jpg");
+    height: 15%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    // float: left;
+  }
+  .breakfast-menu{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+  .breakfast-table {
+  width: 100%;
+  // margin:100px auto;
+  // table-layout:fixed;
+  border-collapse: collapse;
+  }
+  .breakfast-table td {
+  padding:1em 0 0 0;
+  vertical-align:bottom;
+  }
+  .breakfast-table td:first-child {
+  text-align: left;
+  font-weight: 700;
+  overflow: hidden;
+  position: relative;
+  }
+  .breakfast-table td:first-child::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width:1500px;
+  height:0px ;
+  margin-left: 1em;
+  border-bottom:2px dotted grey;
+  }
+  .breakfast-table td:last-child {
+  text-align:right;
+  width:1em;
+  }
+  .breakfast-table tr:nth-child(even){
+    background-color: transparent;
+  }
+  .eggs, .omelettes, .breakfast-sandwiches, .pancakes-frenchtoast, .breakfast-other, .toast-bagels-muffins {
+    width: 85%;
+    margin-left: 5%;
+  }
+  .breakfast-name{
+    font-size: 12px;
+    text-align: center;
+  }
+  .breakfast-description{
+    font-size: 10px;
+    text-align: center;
+  }
+  .breakfast-table td{
+    font-size: 8px;
+  }
+}
+
+@media all and (min-width: 768px){
+  .breakfast {
+  height: 1000px;
+  }
+  .eggs, .omelettes, .breakfast-sandwiches, .pancakes-frenchtoast, .breakfast-other, .toast-bagels-muffins {
+    width: 40%;
+    margin-left: 5%;
+  }
+  .breakfast-name{
+    font-size: 18px;
+  }
+  .breakfast-description{
+    font-size: 15px;
+  }
+  .breakfast-table td{
+    font-size: 12px;
+  }
+}
+
+@media all and (min-width: 1024px){
+  .breakfast {
+    height: 1200px;
+  }
+  .breakfast-container{
+    width: 80%;
+  }
+  .breakfast-name{
+    font-size: 25px;
+  }
+  .breakfast-description{
+    font-size: 17px;
+  }
+  .breakfast-table td{
+    font-size: 15px;
+  }
+}
